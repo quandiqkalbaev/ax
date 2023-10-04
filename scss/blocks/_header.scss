@@ -1,0 +1,28 @@
+.header {
+  margin-top: 30px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  &__left {
+    padding-right: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  &__right {
+    display: flex;
+  }
+  &__social {
+    &-item + &-item {
+      margin-left: 15px;
+    }
+    padding: 10px 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  &__tel {
+    padding: 11px 3px 11px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>Document</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- three js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
+  </head>
+  <body>
+    <!-- Header Area Start -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__left">
+            <a class="header__logo" href="./index.html">
+              <img class="" src="./images/logo.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="header__right">
+            <div class="header__social">
+              <a class="header__social-item" href="#">
+                <img src="./images/tg.svg" alt="tg" />
+              </a>
+              <a class="header__social-item" href="#">
+                <img src="./images/wapp.svg" alt="wapp" />
+              </a>
+            </div>
+            <a href="tel:+" class="header__tel"> +99899 xxx xx xx </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Area End -->
+
+    <main>
+      <!-- Intro area Start -->
+      <section class="modal">
+        <div class="modal__item modal__item-1 modal__item-apartment">
+          <span>M1</span>
+          <p>apartments</p>
+        </div>
+
+        <div class="modal__wrapper">
+          <div class="modal__content" id="viewer">
+            <div class="modal__content-info">
+              <p><span>2</span>L-Shape</p>
+              <button class="modal__close"><img src="./images/close.svg" alt="" /></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal__item modal__item-2 modal__item-mansion">
+          <span>M2</span>
+          <p>Mansions</p>
+        </div>
+
+        <div class="modal__item modal__item-3 modal__item-road">
+          <span>R1</span>
+          <p>Road</p>
+        </div>
+        <div class="modal__item modal__item-4 modal__item-park">
+          <span>P1</span>
+          <p>Park</p>
+        </div>
+      </section>
+      <!-- Intro area End -->
+    </main>
+
+    <!-- Js settings -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three/build/three.module.js",
+          "@photo-sphere-viewer/core": "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core@5/index.module.js"
+        }
+      }
+    </script>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

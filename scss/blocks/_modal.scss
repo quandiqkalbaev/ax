@@ -1,0 +1,76 @@
+.modal {
+  &__item {
+    position: absolute;
+    border: 1.19px solid rgba(255, 255, 255, 0.1);
+    background: #000;
+    display: flex;
+    align-items: center;
+    font-size: 14.286px;
+    font-weight: 500;
+    padding: 3px 9px 3px 4px;
+    cursor: pointer;
+    span {
+      background-color: #fff;
+      color: #000;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px;
+    }
+    p {
+      text-transform: capitalize;
+      margin-left: 11px;
+    }
+    &-apartment {
+      left: 50%;
+      top: 25%;
+    }
+    &-mansion {
+      left: 10%;
+      top: 60%;
+    }
+    &-road {
+      left: 70%;
+      top: 70%;
+    }
+    &-park {
+      left: 35%;
+      top: 55%;
+    }
+  }
+  &__wrapper {
+    z-index: 9;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+  }
+  &__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #656565;
+    height: 80vh;
+    width: 90vw;
+    &-info {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: -40px;
+      right: 0;
+      span {
+        padding: 0 5px;
+        margin-right: 11px;
+        border: 1px solid #fff;
+      }
+      p {
+        margin-right: 10px;
+      }
+    }
+  }
+}
