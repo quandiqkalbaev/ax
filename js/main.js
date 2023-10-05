@@ -15,7 +15,7 @@ modals.forEach((e, index) => {
 
     viewer = new Viewer({
       container: "viewer",
-      panorama: `../images/${index + 1}.jpg`,
+      panorama: `../images/${index + 1}.webp`,
       mousewheelCtrlKey: true,
     });
   });
