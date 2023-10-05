@@ -10,17 +10,18 @@
     <!-- style -->
     <link rel="stylesheet" href="./css/main.css" />
 
-    <!-- three js -->
+    <!-- photo sphere viewer -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
   </head>
   <body>
+    
     <!-- Header Area Start -->
     <header class="header">
       <div class="container">
         <div class="header__inner">
           <div class="header__left">
             <a class="header__logo" href="./index.html">
-              <img class="" src="./images/logo.svg" alt="logo" />
+              <img src="./images/logo.svg" alt="logo" />
             </a>
           </div>
           <div class="header__right">
@@ -40,25 +41,25 @@
     <!-- Header Area End -->
 
     <main>
+
       <!-- Intro area Start -->
       <section class="modal">
-        <div class="modal__item modal__item-1 modal__item-apartment">
+        <div class="modal__item modal__item-apartment">
           <span>M1</span>
           <p>apartments</p>
         </div>
-        <div class="modal__item modal__item-2 modal__item-mansion">
+        <div class="modal__item modal__item-mansion">
           <span>M2</span>
           <p>Mansions</p>
         </div>
-        <div class="modal__item modal__item-3 modal__item-park">
+        <div class="modal__item modal__item-park">
           <span>P1</span>
           <p>Park</p>
         </div>
-        <div class="modal__item modal__item-4 modal__item-road">
+        <div class="modal__item modal__item-road">
           <span>R1</span>
           <p>Road</p>
         </div>
-
         <div class="modal__wrapper">
           <div class="modal__content" id="viewer">
             <div class="modal__content-info">
@@ -68,7 +69,45 @@
           </div>
         </div>
       </section>
-      <!-- Intro area End -->
+
+      <!-- Popup area Start -->
+      <section class="popup">
+        <button class="popup__btn">
+          Download brochure
+          <span><img src="./images/download.svg" alt="" /></span>
+        </button>
+
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <div class="popup__left">
+              <p class="popup__title">don't miss the unique offer</p>
+              <p class="popup__subtitle">
+                Be the first to experience the beauty of Keturah Resort at our exclusive private screening event! Leave
+                your contact information below to receive an invitation to our special event.
+              </p>
+              <div class="popup__socials">
+                <a href="#" class="popup__social popup__social-tg">
+                  <span><img src="./images/tg.svg" alt="" /></span>
+                  <p>Telegram</p>
+                </a>
+                <a href="#" class="popup__social popup__social-wapp"
+                  ><span><img src="./images/wapp.svg" alt="" /></span>
+                  <p>Whatsapp</p></a
+                >
+              </div>
+            </div>
+            <form class="popup__right form">
+              <input type="text" name="name" id="name" placeholder="Your Name" />
+              <input type="email" name="email" id="email" placeholder="Your e-mail" />
+              <input type="tel" name="phone" id="phone" placeholder="Phone Number" />
+              <button type="submit">Join now</button>
+            </form>
+            <button class="popup__close"><img src="./images/close.svg" alt="close-popup" /></button>
+          </div>
+        </div>
+      </section>
+      <!-- Popup area End -->
+
     </main>
 
     <!-- Js settings -->
