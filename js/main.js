@@ -1,6 +1,6 @@
-
 import { Viewer } from "@photo-sphere-viewer/core";
 
+//360 viewer
 
 let modal = document.querySelector(".modal__wrapper"),
   closeBtn = document.querySelector(".modal__close"),
@@ -27,6 +27,8 @@ modals.forEach((e, index) => {
   });
 });
 
+// popup
+
 let popup = document.querySelector(".popup__wrapper"),
   openPoP = document.querySelector(".popup__btn"),
   closePoP = document.querySelector(".popup__close");
@@ -36,4 +38,10 @@ openPoP.addEventListener("click", function () {
 });
 closePoP.addEventListener("click", function () {
   popup.style.display = "none";
+});
+
+// form
+const form = document.querySelector(".form");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
 });
